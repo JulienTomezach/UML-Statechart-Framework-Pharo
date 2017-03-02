@@ -1,3 +1,5 @@
+## Under construction 
+
 # UML-Statechart-Framework-Pharo
 
 This project is a fork of: https://github.com/klangfarbe/UML-Statechart-Framework-for-Java but in Pharo.
