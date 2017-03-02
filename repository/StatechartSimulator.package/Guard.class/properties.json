@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"body" ],
+	"name" : "Guard",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

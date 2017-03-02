@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"activate:parameter:" : "julienTomezach 2/28/2017 21:16",
+		"addTransition:" : "julienTomezach 2/27/2017 18:19",
+		"context" : "julienTomezach 2/27/2017 17:55",
+		"deactivate:parameter:" : "julienTomezach 2/28/2017 21:15",
+		"dispatch:event:parameter:" : "julienTomezach 2/28/2017 16:10",
+		"entryAction:" : "julienTomezach 2/27/2017 17:55",
+		"exitAction:" : "julienTomezach 2/27/2017 17:55",
+		"name:" : "julienTomezach 2/27/2017 17:55",
+		"name:parent:" : "JulienTomezach 3/1/2017 12:36",
+		"name:parent:entryAction:exitAction:" : "julienTomezach 2/28/2017 15:33",
+		"name:parent:exitAction:" : "JulienTomezach 3/2/2017 08:41",
+		"print" : "julienTomezach 2/27/2017 17:58" } }

@@ -1,0 +1,18 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"event",
+		"guard",
+		"action",
+		"activate",
+		"deactivate" ],
+	"name" : "Transition",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

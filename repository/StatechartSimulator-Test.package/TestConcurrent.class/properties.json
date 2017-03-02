@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"result" ],
+	"name" : "TestConcurrent",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

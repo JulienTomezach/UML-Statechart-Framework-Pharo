@@ -1,0 +1,15 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"incoming" ],
+	"name" : "PseudoState",
+	"pools" : [
+		 ],
+	"super" : "State",
+	"type" : "normal" }

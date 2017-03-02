@@ -1,0 +1,15 @@
+{
+	"category" : "StatechartSimulator-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"result",
+		"stateA" ],
+	"name" : "TestHierarchical",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

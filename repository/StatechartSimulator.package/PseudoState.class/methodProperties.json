@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"calculate:state:data:type:" : "julienTomezach 2/28/2017 14:33",
+		"pseudostate_start" : "julienTomezach 2/28/2017 13:38" },
+	"instance" : {
+		"activate:parameter:" : "julienTomezach 2/28/2017 14:19",
+		"addIncomingTransition:" : "julienTomezach 2/28/2017 14:26",
+		"lookup:parameter:" : "JulienTomezach 3/1/2017 14:47",
+		"name:parent:type:" : "julienTomezach 2/28/2017 16:02",
+		"type" : "julienTomezach 2/28/2017 13:52" } }

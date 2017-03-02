@@ -1,0 +1,19 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entryAction",
+		"exitAction",
+		"context",
+		"statechart",
+		"transitions",
+		"name" ],
+	"name" : "State",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

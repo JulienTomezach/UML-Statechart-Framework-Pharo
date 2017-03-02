@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"dispatch:event:" : "julienTomezach 2/28/2017 11:37",
+		"dispatch:event:parameter:" : "julienTomezach 2/28/2017 21:26",
+		"getStateByName:" : "julienTomezach 2/28/2017 12:06",
+		"initialize" : "julienTomezach 2/28/2017 15:23",
+		"name:" : "julienTomezach 2/28/2017 21:20",
+		"restoreState:data:parameter:" : "julienTomezach 2/28/2017 11:33",
+		"start:" : "julienTomezach 2/28/2017 12:03",
+		"start:parameter:" : "julienTomezach 2/28/2017 10:54",
+		"states" : "julienTomezach 2/28/2017 15:21" } }

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createTrForStateA:stateB:stateC:start:final:stateAH:stateBH:startH:finalH:" : "JulienTomezach 3/1/2017 12:51",
+		"createTrForStateB:start:final:stateAH:stateBH:startH:finalH:" : "JulienTomezach 3/1/2017 14:09",
+		"setUp" : "JulienTomezach 3/1/2017 12:50",
+		"testHierarchicalInOrder" : "JulienTomezach 3/1/2017 13:46",
+		"testHierarchicalNotInOrder" : "JulienTomezach 3/1/2017 15:26" } }

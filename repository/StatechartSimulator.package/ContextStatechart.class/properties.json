@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startState" ],
+	"name" : "ContextStatechart",
+	"pools" : [
+		 ],
+	"super" : "State",
+	"type" : "normal" }

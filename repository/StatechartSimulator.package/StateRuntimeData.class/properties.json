@@ -1,0 +1,17 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"currentTime",
+		"active",
+		"currentState",
+		"stateset" ],
+	"name" : "StateRuntimeData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
