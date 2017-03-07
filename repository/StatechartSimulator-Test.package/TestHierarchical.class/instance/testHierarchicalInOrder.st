@@ -3,12 +3,18 @@ testHierarchicalInOrder
 	| statechart start startH final finalH stateA stateB stateC stateAH stateBH data expected |
 	"creation of the states"
 	statechart := Statechart new name: 'statechart'.
-	start := PseudoState new name: 'start' parent: statechart type: PseudoState pseudostate_start.
-	final := FinalState new name: 'final' parent: statechart.
-	stateA := State new name: 'stateA' parent: statechart.
-	stateB := HierarchicalState new name: 'stateB' parent: statechart.
-	stateC := State new name: 'stateC' parent: statechart.
-	startH := PseudoState new name: 'startH' parent: stateB type: PseudoState pseudostate_start.
+	start := PseudoState new
+		name: 'start'
+		parent: statechart root
+		type: PseudoState pseudostate_start.
+	final := FinalState new name: 'final' parent: statechart root.
+	stateA := State new name: 'stateA' parent: statechart root.
+	stateB := HierarchicalState new name: 'stateB' parent: statechart root.
+	stateC := State new name: 'stateC' parent: statechart root.
+	startH := PseudoState new
+		name: 'startH'
+		parent: stateB
+		type: PseudoState pseudostate_start.
 	stateAH := State new name: 'stateAH' parent: stateB.
 	stateBH := State new name: 'stateBH' parent: stateB.
 	finalH := FinalState new name: 'finalH' parent: stateB.

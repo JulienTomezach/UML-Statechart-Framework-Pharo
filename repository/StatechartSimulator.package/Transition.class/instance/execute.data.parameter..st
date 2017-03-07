@@ -1,7 +1,7 @@
 as yet unclassified
 execute: eventP data: data parameter: parameter
 	" check if the event can be handled"
-	|i|
+	|i contextData|
 	event
 		ifNotNil: [ (event equals: eventP)
 				ifFalse: [ ^ false ] ].
@@ -15,8 +15,9 @@ execute: eventP data: data parameter: parameter
 	deactivate do: [ :state | state deactivate: data parameter: parameter ].
 
 	" Execute exit-action"
+	contextData := data getData: activate first context. 
 	action isNotNil
-		ifTrue: [ action execute: data parameter: parameter ].
+		ifTrue: [ action execute: contextData stateData parameter: parameter ].
 
 	" Activate all new states"
 	i:= 1.

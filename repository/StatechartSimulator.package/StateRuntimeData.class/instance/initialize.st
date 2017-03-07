@@ -3,4 +3,5 @@ initialize
 	currentTime := 0.
 	active := false.
 	currentState := nil.
-	stateset := LinkedList new
+	stateset := LinkedList new.
+	stateData := nil

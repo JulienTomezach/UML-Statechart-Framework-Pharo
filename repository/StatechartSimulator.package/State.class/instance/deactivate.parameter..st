@@ -2,7 +2,9 @@ as yet unclassified
 deactivate: data parameter: parameter
 	(data
 		isActive: self)
-		ifTrue: [ data deactivate: self.
+		ifTrue: [ |contextData|
+			contextData := data getData: self context.
+			data deactivate: self.
 			exitAction isNotNil
-				ifTrue: [ exitAction execute: data parameter: parameter ] ]
+				ifTrue: [ exitAction execute: (contextData  stateData) parameter: parameter ] ]
 	

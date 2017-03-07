@@ -3,13 +3,22 @@ testConcurrentNotInOrder
 	| statechart start final stateConc stateA stateB startA startB stateAa stateAb stateBa stateBb data expected |
 	"creation of the states"
 	statechart := Statechart new name: 'statechart'.
-	start := PseudoState new name: 'start' parent: statechart type: PseudoState pseudostate_start.
-	final := FinalState new name: 'final' parent: statechart.
-	stateConc := ConcurrentState new name: 'stateConc' parent: statechart.
+	start := PseudoState new
+		name: 'start'
+		parent: statechart root
+		type: PseudoState pseudostate_start.
+	final := FinalState new name: 'final' parent: statechart root.
+	stateConc := ConcurrentState new name: 'stateConc' parent: statechart root.
 	stateA := HierarchicalState new name: 'stateA' parent: stateConc.
 	stateB := HierarchicalState new name: 'stateB' parent: stateConc.
-	startA := PseudoState new name: 'startA' parent: stateA type: PseudoState pseudostate_start.
-	startB := PseudoState new name: 'startB' parent: stateB type: PseudoState pseudostate_start.
+	startA := PseudoState new
+		name: 'startA'
+		parent: stateA
+		type: PseudoState pseudostate_start.
+	startB := PseudoState new
+		name: 'startB'
+		parent: stateB
+		type: PseudoState pseudostate_start.
 	stateAa := State new
 		name: 'stateAa'
 		parent: stateA

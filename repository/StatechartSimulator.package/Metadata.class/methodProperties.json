@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"activate:" : "julienTomezach 2/28/2017 15:54",
+		"activate:" : "JulienTomezach 3/6/2017 14:01",
 		"activeStates" : "julienTomezach 2/28/2017 21:15",
 		"createRuntimedata:" : "JulienTomezach 3/2/2017 08:51",
-		"deactivate:" : "julienTomezach 2/28/2017 21:16",
+		"deactivate:" : "JulienTomezach 3/6/2017 11:34",
 		"getData:" : "julienTomezach 2/28/2017 15:56",
 		"initialize" : "julienTomezach 2/28/2017 09:58",
 		"isActive:" : "julienTomezach 2/28/2017 21:16",

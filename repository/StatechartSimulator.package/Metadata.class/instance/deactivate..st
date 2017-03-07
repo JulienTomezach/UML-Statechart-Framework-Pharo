@@ -4,6 +4,6 @@ deactivate: state
 		includesKey: state)
 		ifTrue: [ | data |
 			data := self getData: state.
-			data currentState: nil.
+			data active: false.
 			data := nil.
 			activeStates removeKey: state ]

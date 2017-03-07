@@ -13,5 +13,4 @@ deactivate: data parameter: parameter
 	"deactivate substate"
 	statedata currentState
 		ifNotNil: [ statedata currentState deactivate: data parameter: parameter ].
-	statedata currentState: nil.
 	super deactivate: data parameter: parameter
