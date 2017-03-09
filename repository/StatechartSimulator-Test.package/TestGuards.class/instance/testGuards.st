@@ -14,41 +14,41 @@ testGuards
 	stateA := State new
 		name: 'stateA'
 		parent: statechart root
-		entryAction: (Action new: [ :d | result := result , 'A entry' , String cr ])
+		entryAction: (Action new: [ :d :p | result := result , 'A entry' , String cr ])
 		exitAction: nil.
 	stateB := State new
 		name: 'stateB'
 		parent: statechart root
 		entryAction: nil
-		exitAction: (Action new: [ :d | result := result , 'B exit' , String cr ]).
+		exitAction: (Action new: [ :d :p | result := result , 'B exit' , String cr ]).
 	stateC := State new
 		name: 'stateC'
 		parent: statechart root
-		entryAction: (Action new: [ :d | result := result , 'C entry' , String cr ])
-		exitAction: (Action new: [ :d | result := result , 'C exit' , String cr ]).
+		entryAction: (Action new: [ :d :p | result := result , 'C entry' , String cr ])
+		exitAction: (Action new: [ :d :p | result := result , 'C exit' , String cr ]).
 	stateD := State new
 		name: 'stateD'
 		parent: statechart root
-		entryAction: (Action new: [ :d | result := result , 'D entry' , String cr ])
-		exitAction: (Action new: [ :d | result := result , 'D exit' , String cr ]).
+		entryAction: (Action new: [ :d :p | result := result , 'D entry' , String cr ])
+		exitAction: (Action new: [ :d :p | result := result , 'D exit' , String cr ]).
 	Transition new start: start end: stateA.
 	Transition new
 		start: stateA
 		end: stateB
 		event: nil
-		guard: (Guard new: [ :d | cond1 ])
-		action: (Action new: [ :d | result := result , 'AB transit' , String cr ]).
+		guard: (Guard new: [ :d :p | cond1 ])
+		action: (Action new: [ :d :p | result := result , 'AB transit' , String cr ]).
 	Transition new
 		start: stateB
 		end: stateC
 		event: (Event new type: 'EventBD')
-		guard: (Guard new: [ :d | cond2 ])
+		guard: (Guard new: [ :d :p | cond2 ])
 		action: nil.
 	Transition new
 		start: stateB
 		end: stateD
 		event: (Event new type: 'EventBD')
-		guard: (Guard new: [ :d | cond3 ])
+		guard: (Guard new: [ :d :p | cond3 ])
 		action: nil.
 	Transition new start: stateD end: final.
 	data := Metadata new.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml  name="testHierarchical" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+  <state id= "root" initial="conc">
+    <onentry>
+      <script>data at: 'stream' put: (WriteStream on: String new)  </script>
+    </onentry>
+    <parallel id="conc">
+      <state id="fst" initial="fstA">
+        <state id="fstA">
+          <transition event='a' target="fstB"/>
+          <onexit>
+            <script> (data at: 'stream') nextPutAll: 'leaving stateAa'   </script>
+          </onexit>
+        </state>
+        <state id="fstB">
+      </state>
+    </state>
+      <state id="snd" initial="sndA">
+        <state id="sndA">
+          <transition event='b' target="sndB">
+            <script> (data at: 'stream') nextPutAll: '1'   </script>
+          </transition>
+        </state>
+        <state id="sndB">
+          <transition event='c' target="final">
+            <script> (data at: 'stream') nextPutAll: '3'   </script>
+          </transition>
+          <onexit>
+            <script> (data at: 'stream') nextPutAll: '2'   </script>
+          </onexit>
+        </state>
+      </state>
+    </parallel>
+  <final id="final"/>
+</state>
+</scxml>

@@ -1,0 +1,3 @@
+accessing
+statechartFolderPath
+	^ statechartFolderPath

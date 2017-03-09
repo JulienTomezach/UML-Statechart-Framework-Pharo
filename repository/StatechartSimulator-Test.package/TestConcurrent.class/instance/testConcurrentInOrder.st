@@ -31,19 +31,19 @@ testConcurrentInOrder
 	Transition new
 		start: stateConc
 		end: final
-		action: (Action new body: [ :d | result := result , '3' ]).
+		action: (Action new body: [ :d :p | result := result , '3' ]).
 	Transition new start: startA end: stateAa.
 	Transition new start: startB end: stateBa.
 	Transition new
 		start: stateAa
 		end: finalA
 		event: (Event new type: 'a')
-		action: (Action new body: [ :d | result := result , '1' ]).
+		action: (Action new body: [ :d :p | result := result , '1' ]).
 	Transition new
 		start: stateBa
 		end: finalB
 		event: (Event new type: 'a')
-		action: (Action new body: [ :d | result := result , '2' ]).
+		action: (Action new body: [ :d :p| result := result , '2' ]).
 	"dispatch event"
 	data := Metadata new.
 	statechart start: data.

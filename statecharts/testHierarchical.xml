@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scxml  name="testHierarchical" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+  <state id= "root">
+    <onentry>
+      <script>data at: 'stream' put: (WriteStream on: String new)  </script>
+    </onentry>
+    <initial>
+      <transition  target="stateA">
+        <script>(data at: 'stream') nextPutAll: '1'  </script>
+      </transition>
+    </initial>
+    <state id="stateA" >
+      <transition event= 'a' cond="(data at: 'stream') isEmpty not and: (param at: 'bool') " target="stateB">
+        <script> (data at: 'stream') nextPutAll: (param at: 'text')  </script>
+      </transition>
+    </state>
+    <state id="stateB" >
+      <transition event="d" target="stateC">
+        <script> (data at: 'stream') nextPutAll: '6'  </script>
+      </transition>
+      <initial>
+        <transition target="stateAH">
+          <script> (data at: 'stream') nextPutAll: '3'  </script>
+        </transition>
+      </initial>
+        <state id="stateAH" >
+          <transition event="b" target="stateBH">
+            <script> (data at: 'stream') nextPutAll: '4'  </script>
+          </transition>
+        </state>
+
+        <state id="stateBH" >
+          <transition event="c" target="finalH">
+            <script> (data at: 'stream') nextPutAll: '5'  </script>
+          </transition>
+        </state>
+
+        <final id="finalH"/>
+
+    </state>
+
+    <state id="stateC">
+      <transition event= 'e' target="final">
+        <script> (data at: 'stream') nextPutAll: '7'  </script>
+      </transition>
+    </state>
+    <final id="final"/>
+  </state>
+</scxml>

@@ -5,4 +5,4 @@ addFinal: node parent: parent
 	elem ifNil: [ ^ false ].
 	nameState := elem attributeAt: 'id'.
 	state := FinalState new name: nameState parent: parent.
-	allStatesCreated at: nameState put: state
+	allStatesCreated at: nameState put: state.

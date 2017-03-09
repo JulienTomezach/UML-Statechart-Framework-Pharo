@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scxml  name="testAction" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+  <state id= "root" initial= "stateA">
+    <onentry>
+      <script>data at: 'stream' put: (WriteStream on: String new)  </script>
+    </onentry>
+    <state id="stateA" >
+      <onentry>
+        <script>(data at: 'stream') nextPutAll: 'A entry'; cr  </script>
+      </onentry>
+      <transition target="stateB">
+        <script> (data at: 'stream') nextPutAll: 'AB transit'; cr  </script>
+      </transition>
+    </state>
+    <state id="stateB" >
+      <transition target="final"/>
+      <onexit>
+          <script>(data at: 'stream') nextPutAll: 'B exit'; cr  </script>
+      </onexit>
+    </state>
+    <final id="final"/>
+  </state>
+</scxml>

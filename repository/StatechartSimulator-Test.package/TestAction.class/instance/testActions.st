@@ -4,10 +4,7 @@ testActions
 	statechart := Statechart new name: 'statechart'.
 	root := statechart root.
 	root
-		entryAction:
-			(Action
-				new: [ :d | 
-					d at: 'stream' put: (WriteStream on: String new).]).
+		entryAction: (Action new: [ :d :p | d at: 'stream' put: (WriteStream on: String new) ]).
 	start := PseudoState new name: 'start' parent: root type: PseudoState pseudostate_start.
 	final := FinalState new name: 'finale' parent: root.
 	stateA := State new
@@ -15,7 +12,7 @@ testActions
 		parent: root
 		entryAction:
 			(Action
-				new: [ :d | 
+				new: [ :d :p | 
 					(d at: 'stream')
 						nextPutAll: 'A entry';
 						cr ])
@@ -26,7 +23,7 @@ testActions
 		entryAction: nil
 		exitAction:
 			(Action
-				new: [ :d | 
+				new: [ :d :p| 
 					(d at: 'stream')
 						nextPutAll: 'B exit';
 						cr ]).
@@ -38,7 +35,7 @@ testActions
 		guard: nil
 		action:
 			(Action
-				new: [ :d | 
+				new: [ :d :p | 
 					(d at: 'stream')
 						nextPutAll: 'AB transit';
 						cr ]).

@@ -12,11 +12,11 @@ addTransition: trNode
 				ifTrue: [ start := allStatesCreated at: 'start' , (parent parent attributeAt: 'id') ]
 				ifFalse: [ ^ false ] ].
 	field := trNode attributeAt: 'event'.
-	field ifNotEmpty: [ Event new type: field ].
+	field ifNotEmpty: [ event := Event new type: field ].
 	field := trNode attributeAt: 'cond'.
-	field ifNotEmpty: [ guard := Guard new: (Compiler evaluate: field) ].
-	field := trNode elementAt: 'script'.
-	field ifNotNil: [ action := Action new: (Compiler evaluate: field strings first) ].
+	field
+		ifNotEmpty: [ guard := Guard new: (Compiler evaluate: (self turnIntoBloc: field)) ].
+	action := self turnIntoAction: trNode.
 	Transition new
 		start: start
 		end: target

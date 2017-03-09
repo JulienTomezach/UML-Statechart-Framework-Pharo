@@ -22,13 +22,13 @@ testConcurrentNotInOrder
 	stateAa := State new
 		name: 'stateAa'
 		parent: stateA
-		exitAction: (Action new: [ :d | result := result , 'leaving stateAa' ]).
+		exitAction: (Action new: [ :d :p | result := result , 'leaving stateAa' ]).
 	stateBa := State new name: 'stateBa' parent: stateB.
 	stateAb := State new name: 'stateAb' parent: stateA.
 	stateBb := State new
 		name: 'stateBb'
 		parent: stateB
-		exitAction: (Action new body: [ :d | result := result , '2' ]).
+		exitAction: (Action new body: [ :d :p | result := result , '2' ]).
 	"-----------"
 	"Transitions"
 	"-----------"
@@ -37,7 +37,7 @@ testConcurrentNotInOrder
 		start: stateBb
 		end: final
 		event: (Event new type: 'c')
-		action: (Action new body: [ :d | result := result , '3' ]).
+		action: (Action new body: [ :d :p| result := result , '3' ]).
 	Transition new start: startA end: stateAa.
 	Transition new start: startB end: stateBa.
 	Transition new start: stateAa end: stateAb event: (Event new type: 'a').
@@ -45,7 +45,7 @@ testConcurrentNotInOrder
 		start: stateBa
 		end: stateBb
 		event: (Event new type: 'b')
-		action: (Action new body: [ :d | result := result , '1' ]).
+		action: (Action new body: [ :d :p | result := result , '1' ]).
 	"dispatch event"
 	data := Metadata new.
 	statechart start: data.

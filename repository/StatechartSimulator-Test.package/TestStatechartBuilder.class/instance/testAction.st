@@ -2,7 +2,7 @@ as yet unclassified
 testAction
 	| data statechart expected root |
 	statechart := StatechartBuilder
-		buildFromFile: 'C:\Users\Falcon\Documents\AppliSys\testAction.xml'.
+		buildFromFile: StatechartConstants statechartFolderPath , 'testAction.xml'.
 	root := statechart root.
 	data := Metadata new.
 	statechart start: data.

@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		"instance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"statechartLocalData" ],
+	"name" : "Sender",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scxml  name="pong" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+
+  <state id= "root" initial='waiting'>
+    <onentry>
+      <script>data at: 'stream' put: (FileStream fileNamed: 'C:\Users\Falcon\Documents\AppliSys\pong.log').
+      data at: 'iterPing' put: 0  </script>
+    </onentry>
+
+    <state id="waiting">
+      <transition event="pong" target="waiting">
+        <script>(data at: 'stream') nextPutAll: DateAndTime current printString, 'receive ping';
+           cr; nextPutAll: 'send pong'; cr.
+        data at: 'iterPing' put: ((data at: 'iterPing')+1)   </script>
+        <send event="pong" target="ping"/>
+      </transition>
+    </state>
+  </state>
+
+
+</scxml>

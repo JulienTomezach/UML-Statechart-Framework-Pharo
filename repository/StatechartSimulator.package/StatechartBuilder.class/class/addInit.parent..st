@@ -4,7 +4,7 @@ addInit: node parent: parent
 	attr := node attributeAt: 'initial'.
 	elem := node elementAt: 'initial'.
 	nameState := 'start' , (node attributeAt: 'id').
-	attr ifNil: [ elem ifNil: [ ^ false ] ].
+	attr ifEmpty: [ elem ifNil: [ ^ false ] ].
 	state := PseudoState new
 		name: nameState 
 		parent: parent

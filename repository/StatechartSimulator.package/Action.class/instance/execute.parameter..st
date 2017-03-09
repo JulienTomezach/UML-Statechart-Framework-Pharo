@@ -1,3 +1,3 @@
 as yet unclassified
 execute: data parameter: param
-	body value: data 
+	body value: data value: param

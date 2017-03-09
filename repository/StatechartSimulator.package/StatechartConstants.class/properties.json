@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		"statechartFolderPath" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "StatechartConstants",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

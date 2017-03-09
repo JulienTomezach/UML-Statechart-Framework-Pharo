@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"activeStates" ],
+		"activeStates",
+		"events",
+		"objectID" ],
 	"name" : "Metadata",
 	"pools" : [
 		 ],

@@ -5,6 +5,6 @@ addInitTransition: node
 		ifFalse: [ nameEnd := node attributeAt: 'initial'.
 			nameStart := 'start' , (node attributeAt: 'id').
 			nameEnd
-				ifNotNil: [ Transition new
+				ifNotEmpty: [ Transition new
 						start: (allStatesCreated at: nameStart)
 						end: (allStatesCreated at: nameEnd) ] ]
