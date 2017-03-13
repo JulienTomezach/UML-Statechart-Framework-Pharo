@@ -3,7 +3,7 @@ deactivate: data parameter: parameter
 	| statedata |
 	(data isActive: self)
 		ifFalse: [ ^ false ].
-	statedata := data getData: self.
+	statedata := data getRuntimeData: self.
 	statedata
 		ifNil: [ super deactivate: data parameter: parameter.
 			^ true ].

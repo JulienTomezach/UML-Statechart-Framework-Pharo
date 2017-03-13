@@ -1,0 +1,16 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"world",
+		"currentTime",
+		"isDiscrete" ],
+	"name" : "TimeMaster",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

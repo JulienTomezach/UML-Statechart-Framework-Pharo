@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "StatechartManager",
+	"pools" : [
+		 ],
+	"super" : "ManagerEC",
+	"type" : "normal" }

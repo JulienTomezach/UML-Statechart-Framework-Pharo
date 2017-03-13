@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"computeNextCurrentTime:" : "JulienTomezach 3/13/2017 18:26",
+		"currentTime" : "JulienTomezach 3/13/2017 18:20",
+		"currentTime:" : "JulienTomezach 3/13/2017 18:20",
+		"initialize" : "JulienTomezach 3/13/2017 18:20",
+		"isDiscrete" : "JulienTomezach 3/13/2017 18:20",
+		"isDiscrete:" : "JulienTomezach 3/13/2017 18:20",
+		"run" : "JulienTomezach 3/13/2017 22:05",
+		"world" : "JulienTomezach 3/13/2017 18:20",
+		"world:" : "JulienTomezach 3/13/2017 18:20" } }

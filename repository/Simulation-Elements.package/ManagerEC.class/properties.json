@@ -1,0 +1,15 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"childs",
+		"currentDate" ],
+	"name" : "ManagerEC",
+	"pools" : [
+		 ],
+	"super" : "TreeElement",
+	"type" : "normal" }

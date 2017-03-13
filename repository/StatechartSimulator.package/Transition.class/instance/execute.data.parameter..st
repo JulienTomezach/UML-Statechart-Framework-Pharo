@@ -15,9 +15,9 @@ execute: eventP data: data parameter: parameter
 	deactivate do: [ :state | state deactivate: data parameter: parameter ].
 
 	" Execute exit-action"
-	contextData := data getData: activate first context. 
+	contextData := data getRuntimeData: activate first context. 
 	action isNotNil
-		ifTrue: [ action execute: contextData stateData parameter: parameter ].
+		ifTrue: [ action execute: contextData stateData parameter: parameter sender: data sender].
 
 	" Activate all new states"
 	i:= 1.

@@ -7,4 +7,4 @@ testAction
 	data := Metadata new.
 	statechart start: data.
 	expected := 'A entry' , String cr , 'AB transit' , String cr , 'B exit' , String cr.
-	self assert: ((data getData: root) stateData at: 'stream') contents equals: expected
+	self assert: ((data getRuntimeData: root) stateData at: 'stream') contents equals: expected

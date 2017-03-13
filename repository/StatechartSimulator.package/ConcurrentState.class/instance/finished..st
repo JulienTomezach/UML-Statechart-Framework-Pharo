@@ -2,7 +2,7 @@ as yet unclassified
 finished: data 
     regions do: [:r| 
 	
-     ((data getData: r) currentState class name = 'FinalState') ifFalse: [  
+     ((data getRuntimeData: r) currentState class name = 'FinalState') ifFalse: [  
         ^ false
       ]
     ].

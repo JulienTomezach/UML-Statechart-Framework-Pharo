@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scxml  name="ping2" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+
+<state id= "root" initial='waiting'>
+  <onentry>
+    <script>
+    data at: 'iterPong' put: 0.  </script>
+  </onentry>
+
+  <state id="waiting">
+    <onentry>
+      <script>Transcript show: 'ping', DateAndTime current printString, 'send ping'; cr.  </script>
+      <send event="ping" target="pongObject">
+        <param name="gift" expr="'a_gift'"/>
+      </send>
+    </onentry>
+    <transition event="pong" target="waiting">
+      <script>Transcript show: 'ping', DateAndTime current printString, 'receive pong'; cr.
+      data at: 'iterPong' put: ((data at: 'iterPong')+1)   </script>
+    </transition>
+    <transition cond="(data at: 'iterPong') > 4" target="final"/>
+  </state>
+  <final id="final"/>
+</state>
+
+</scxml>

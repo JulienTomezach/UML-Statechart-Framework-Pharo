@@ -1,0 +1,19 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienTomezach 3/13/2017 17:12",
+	"instvars" : [
+		"firstDate",
+		"address",
+		"id",
+		"parent",
+		"sender",
+		"started" ],
+	"name" : "TreeElement",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

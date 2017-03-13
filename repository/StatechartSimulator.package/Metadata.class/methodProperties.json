@@ -2,14 +2,16 @@
 	"class" : {
 		"new:" : "JulienTomezach 3/9/2017 12:27" },
 	"instance" : {
-		"activate:" : "JulienTomezach 3/6/2017 14:01",
+		"activate:" : "JulienTomezach 3/13/2017 19:01",
 		"activeStates" : "julienTomezach 2/28/2017 21:15",
+		"chart" : "JulienTomezach 3/13/2017 18:56",
+		"chart:" : "JulienTomezach 3/13/2017 18:56",
 		"createRuntimedata:" : "JulienTomezach 3/2/2017 08:51",
-		"deactivate:" : "JulienTomezach 3/6/2017 11:34",
-		"events" : "JulienTomezach 3/9/2017 12:30",
-		"getData:" : "julienTomezach 2/28/2017 15:56",
-		"initialize" : "JulienTomezach 3/9/2017 12:23",
-		"isActive:" : "julienTomezach 2/28/2017 21:16",
-		"objectID" : "JulienTomezach 3/9/2017 12:30",
-		"objectID:" : "JulienTomezach 3/9/2017 12:26",
-		"reset" : "julienTomezach 2/28/2017 10:04" } }
+		"deactivate:" : "JulienTomezach 3/13/2017 19:01",
+		"executeAux:" : "JulienTomezach 3/13/2017 20:25",
+		"getRuntimeData:" : "JulienTomezach 3/13/2017 19:01",
+		"initialize" : "JulienTomezach 3/13/2017 18:08",
+		"isActive:" : "JulienTomezach 3/13/2017 19:01",
+		"isStarted" : "JulienTomezach 3/13/2017 19:00",
+		"reset" : "julienTomezach 2/28/2017 10:04",
+		"start:" : "JulienTomezach 3/13/2017 21:45" } }

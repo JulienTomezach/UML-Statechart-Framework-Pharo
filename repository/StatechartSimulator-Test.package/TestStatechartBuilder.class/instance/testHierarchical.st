@@ -15,4 +15,4 @@ testHierarchical
 	statechart dispatch: data event: (Event new type: 'd').
 	statechart dispatch: data event: (Event new type: 'e').
 	expected := '1' , '2' , '3' , '4' , '5' , '6' , '7'.
-	self assert: ((data getData: root) stateData at: 'stream') contents equals: expected
+	self assert: ((data getRuntimeData: root) stateData at: 'stream') contents equals: expected

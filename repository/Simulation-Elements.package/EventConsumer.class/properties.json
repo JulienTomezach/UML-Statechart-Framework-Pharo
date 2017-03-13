@@ -1,0 +1,14 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"events" ],
+	"name" : "EventConsumer",
+	"pools" : [
+		 ],
+	"super" : "TreeElement",
+	"type" : "normal" }

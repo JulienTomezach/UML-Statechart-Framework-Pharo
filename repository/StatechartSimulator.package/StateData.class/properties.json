@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"variables",
-		"contextData" ],
+		"contextData",
+		"sender" ],
 	"name" : "StateData",
 	"pools" : [
 		 ],

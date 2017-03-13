@@ -15,7 +15,7 @@ addTransition: trNode
 	field ifNotEmpty: [ event := Event new type: field ].
 	field := trNode attributeAt: 'cond'.
 	field
-		ifNotEmpty: [ guard := Guard new: (Compiler evaluate: (self turnIntoBloc: field)) ].
+		ifNotEmpty: [ guard := Guard new: (Compiler evaluate: (self turnIntoGuardBloc: field)) ].
 	action := self turnIntoAction: trNode.
 	Transition new
 		start: start

@@ -4,7 +4,7 @@ dispatch: data event: event parameter: parameter
 
 	| dispatched statedata i |
 	dispatched := false.
-	statedata := data getData: self.
+	statedata := data getRuntimeData: self.
 	"
       Dispatch the event in all regions as long as this state is active. If we
       do not check this, an implicit exist would be ignored by this code.

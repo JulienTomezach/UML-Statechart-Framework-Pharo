@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "JulienTomezach 3/6/2017 10:31",
 	"instvars" : [
-		"currentTime",
 		"active",
 		"currentState",
 		"stateset",

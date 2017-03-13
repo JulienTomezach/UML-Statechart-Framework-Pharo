@@ -3,8 +3,8 @@ deactivate: data parameter: parameter
 	(data
 		isActive: self)
 		ifTrue: [ |contextData|
-			contextData := data getData: self context.
+			contextData := data getRuntimeData: self context.
 			data deactivate: self.
 			exitAction isNotNil
-				ifTrue: [ exitAction execute: (contextData  stateData) parameter: parameter ] ]
+				ifTrue: [ exitAction execute: (contextData  stateData) parameter: parameter sender: data sender] ]
 	

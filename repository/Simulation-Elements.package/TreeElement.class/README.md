@@ -1,0 +1,1 @@
+Abstract class, should not be instantiate.

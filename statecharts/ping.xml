@@ -4,21 +4,23 @@
 
 <state id= "root" initial='waiting'>
   <onentry>
-    <script>data at: 'stream' put: (FileStream fileNamed: 'C:\Users\Falcon\Documents\AppliSys\ping.log').
-    data at: 'iterPong' put: 0  </script>
+    <script>
+    data at: 'iterPong' put: 0.  </script>
   </onentry>
 
   <state id="waiting">
     <onentry>
-      <script>(data at: 'stream') nextPutAll:  DateAndTime current printString, 'send ping'; cr. </script>
-      <send event="ping" target="pong">
+      <script>Transcript show: 'ping', DateAndTime current printString, 'send ping'; cr.  </script>
+      <send event="ping" target="pongObject">
       </send>
     </onentry>
     <transition event="pong" target="waiting">
-      <script>(data at: 'stream') nextPutAll:  DateAndTime current printString, 'receive pong'; cr.
+      <script>Transcript show: 'ping', DateAndTime current printString, 'receive pong'; cr.
       data at: 'iterPong' put: ((data at: 'iterPong')+1)   </script>
     </transition>
+    <transition cond="(data at: 'iterPong') > 4" target="final"/>
   </state>
+  <final id="final"/>
 </state>
 
 </scxml>

@@ -1,15 +1,13 @@
-as yet unclassified
+event handling
 activate: state
 	| data |
-	data := self getData: state.
+	data := self getRuntimeData: state.
 	data isNil
-		ifTrue:
-			[ data := StateRuntimeData new.
-			activeStates at: state put: data ]. 
+		ifTrue: [ data := StateRuntimeData new.
+			activeStates at: state put: data ].
 	data active: true.
-	state context ifNotNil: [  
-	data stateData contextData: (self getData: state context) stateData].
-	data currentTime: Time current.
+	state context
+		ifNotNil: [ data stateData contextData: (self getRuntimeData: state context) stateData ].
 
 	"update the context. if context is null we are at top level"
 	state context isNotNil

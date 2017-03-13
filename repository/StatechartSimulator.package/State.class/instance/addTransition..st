@@ -1,4 +1,4 @@
-as yet unclassified
+adding
 addTransition: transition
 	" make sure transition with guards are checked first"
 

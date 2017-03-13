@@ -1,0 +1,14 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JulienTomezach 3/10/2017 12:18",
+	"instvars" : [
+		 ],
+	"name" : "Parameter",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"type" : "normal" }

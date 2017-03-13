@@ -1,5 +1,4 @@
 as yet unclassified
-dispatch: data event: event
-	| parameter |
-	parameter := Parameter new.
-	^ self dispatch: data event: event parameter: parameter
+dispatch: data event: event 
+event ifNil:[ self dispatch: data event: nil parameter: nil] ifNotNil: [  
+	self dispatch: data event: event parameter: event parameter. ]

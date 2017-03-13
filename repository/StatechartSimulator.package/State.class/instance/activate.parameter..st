@@ -6,7 +6,7 @@ activate: data  parameter: parameter
       
       " trigger the timout events if available"
       
-    entryAction isNotNil ifTrue: [ entryAction execute: ((data getData: self) stateData) parameter: parameter].
+    entryAction isNotNil ifTrue: [ entryAction execute: ((data getRuntimeData: self) stateData) parameter: parameter sender: data sender].
 
       ^ true.
     ].

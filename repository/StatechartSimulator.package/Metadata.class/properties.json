@@ -7,10 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"activeStates",
-		"events",
-		"objectID" ],
+		"chart" ],
 	"name" : "Metadata",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "EventConsumer",
 	"type" : "normal" }

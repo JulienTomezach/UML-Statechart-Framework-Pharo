@@ -1,5 +1,6 @@
 as yet unclassified
-start: data
-	| parameter |
-	parameter := Parameter new.
-	self start: data parameter: parameter
+start: data 
+	data reset.
+	data activate: self.
+	startState activate: data.
+	^ self dispatch: data event: nil

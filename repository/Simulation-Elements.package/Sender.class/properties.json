@@ -1,0 +1,15 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		"instance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"childs",
+		"currentDate" ],
+	"name" : "Sender",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

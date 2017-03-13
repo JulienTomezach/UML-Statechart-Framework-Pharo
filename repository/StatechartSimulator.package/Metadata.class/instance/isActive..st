@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isActive: state
-	(self activeStates includesKey: state) ifTrue: [ ^ (self getData: state) active ].
+	(self activeStates includesKey: state) ifTrue: [ ^ (self getRuntimeData: state) active ].
 	^ false

@@ -2,7 +2,7 @@ as yet unclassified
 activate: data parameter: parameter
 	(super activate: data parameter: parameter)
 		ifTrue: [ | statedata |
-			statedata := data getData: self.
+			statedata := data getRuntimeData: self.
 			regions
 				do: [ :r | 
 					" check if the region is activated implicit via a incoming transition"

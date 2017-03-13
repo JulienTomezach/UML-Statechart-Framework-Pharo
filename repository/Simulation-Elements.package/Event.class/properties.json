@@ -1,0 +1,16 @@
+{
+	"category" : "Simulation-Elements",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"date",
+		"parameter" ],
+	"name" : "Event",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

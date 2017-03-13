@@ -1,0 +1,3 @@
+testing
+isStarted
+	^ activeStates isNotEmpty

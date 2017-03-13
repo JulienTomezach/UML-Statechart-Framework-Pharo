@@ -7,7 +7,7 @@ dispatch: data event: event parameter: parameter
       ^ false
     ].
 
-    statedata := data getData: self.
+    statedata := data getRuntimeData: self.
 
     " Use startstate on activation if available"
     (statedata currentState isNil and: startState isNotNil) ifTrue: [
