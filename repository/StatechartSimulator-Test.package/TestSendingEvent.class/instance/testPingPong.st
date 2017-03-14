@@ -1,7 +1,6 @@
 as yet unclassified
 testPingPong
-	|tm center objIDState pathFolder |
-	Transcript clear.
+	| tm center objIDState pathFolder |
 	center := StatechartManager new.
 	objIDState := Dictionary new.
 	pathFolder := StatechartConstants statechartFolderPath.
@@ -11,7 +10,9 @@ testPingPong
 		keysAndValuesDo: [ :id :chartPath | center atObjectID: id createFrom: chartPath ].
 	tm := TimeMaster new.
 	tm world: center.
-	tm run.	
+	tm run.
+	"Transcript issue..."
+	Halt now .
 	self
 		assert:
 			((Transcript contents

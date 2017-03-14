@@ -3,9 +3,10 @@ run
 	| d |
 	world isStarted
 		ifTrue: [ d := world firstDate.
-			d >= currentTime
+			d ifNotNil: 
+			[d >= currentTime
 				ifTrue: [ currentTime := self computeNextCurrentTime: d ].
 			(world execute: currentTime)
-				ifTrue: [ self run ] ]
+				ifTrue: [ self run ] ] ifNil: [ "nothing to do anymore" ].] 
 		ifFalse: [ world start: currentTime.
 			self run ]

@@ -10,8 +10,8 @@
 
     <state id="waiting">
       <transition event="ping" target="waiting">
-        <script>Transcript show: 'pong',DateAndTime current printString, ' receive_ping_with_', (param at: 'gift');
-           cr. Transcript show: 'pong',' send_pong '; cr.
+        <script>Transcript show: 'pong',sender currentDate printString, ' receive_ping_with_', (param at: 'gift');
+           cr. Transcript show: 'pong',sender currentDate printString,' send_pong '; cr.
         data at: 'iterPing' put: ((data at: 'iterPing')+1)   </script>
         <send event="pong" target="pingObject"/>
       </transition>

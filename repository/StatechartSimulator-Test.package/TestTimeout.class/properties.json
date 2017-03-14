@@ -1,0 +1,14 @@
+{
+	"category" : "StatechartSimulator-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TestTimeout",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -2,12 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"computeNextCurrentTime:" : "JulienTomezach 3/13/2017 18:26",
+		"computeNextCurrentTime:" : "JulienTomezach 3/14/2017 20:47",
 		"currentTime" : "JulienTomezach 3/13/2017 18:20",
 		"currentTime:" : "JulienTomezach 3/13/2017 18:20",
-		"initialize" : "JulienTomezach 3/13/2017 18:20",
+		"debugMode" : "JulienTomezach 3/14/2017 20:37",
+		"debugMode:" : "JulienTomezach 3/14/2017 20:37",
+		"initialize" : "JulienTomezach 3/14/2017 20:53",
 		"isDiscrete" : "JulienTomezach 3/13/2017 18:20",
 		"isDiscrete:" : "JulienTomezach 3/13/2017 18:20",
-		"run" : "JulienTomezach 3/13/2017 22:05",
+		"run" : "JulienTomezach 3/14/2017 20:22",
 		"world" : "JulienTomezach 3/13/2017 18:20",
 		"world:" : "JulienTomezach 3/13/2017 18:20" } }
