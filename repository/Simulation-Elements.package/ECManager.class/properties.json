@@ -8,7 +8,7 @@
 	"instvars" : [
 		"childs",
 		"currentDate" ],
-	"name" : "ManagerEC",
+	"name" : "ECManager",
 	"pools" : [
 		 ],
 	"super" : "TreeElement",

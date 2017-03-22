@@ -1,6 +1,6 @@
 as yet unclassified
 initialize
-	world := ManagerEC new.
+	world := ECManager new.
 	currentTime := DateAndTime current.
 	isDiscrete := true.
 	debugMode := false.

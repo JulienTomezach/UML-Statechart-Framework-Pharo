@@ -10,5 +10,5 @@
 	"name" : "StatechartManager",
 	"pools" : [
 		 ],
-	"super" : "ManagerEC",
+	"super" : "ECManager",
 	"type" : "normal" }

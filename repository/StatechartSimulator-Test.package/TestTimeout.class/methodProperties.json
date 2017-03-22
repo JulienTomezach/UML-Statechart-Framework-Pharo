@@ -4,4 +4,5 @@
 	"instance" : {
 		"setUp" : "JulienTomezach 3/14/2017 21:01",
 		"tearDown" : "JulienTomezach 3/14/2017 21:33",
-		"testPingPong" : "JulienTomezach 3/14/2017 21:32" } }
+		"testPingPong" : "JulienTomezach 3/15/2017 08:32",
+		"testPingPongInRealTime" : "JulienTomezach 3/15/2017 09:20" } }

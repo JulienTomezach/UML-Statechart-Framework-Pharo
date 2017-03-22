@@ -1,5 +1,5 @@
 as yet unclassified
-testPingPong
+testPingPongInRealTime
 	| tm center objIDState pathFolder |
 	center := StatechartManager new.
 	objIDState := Dictionary new.
@@ -10,6 +10,7 @@ testPingPong
 		keysAndValuesDo: [ :id :chartPath | center atObjectID: id createFrom: chartPath ].
 	tm := TimeMaster new debugMode: true.
 	tm world: center.
+	tm isDiscrete: false.
 	tm run.
 	"Transcript issue..."
 	Halt now.
