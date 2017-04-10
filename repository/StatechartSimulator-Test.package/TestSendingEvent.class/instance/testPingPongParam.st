@@ -2,6 +2,7 @@ as yet unclassified
 testPingPongParam
 	| center objIDState pathFolder tm |
 	center := StatechartManager new.
+		center id: 'world'.
 	objIDState := Dictionary new.
 	pathFolder := StatechartConstants statechartFolderPath.
 	objIDState at: 'pingObject' put: pathFolder , 'pingParam.xml'.
@@ -11,7 +12,7 @@ testPingPongParam
 	tm := TimeMaster new.
 	tm world: center.
 	tm run.
-		"Transcript issue..."
+	"Transcript issue..."
 	Halt now.
 	self
 		assert:

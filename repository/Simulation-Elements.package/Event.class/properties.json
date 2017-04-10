@@ -8,7 +8,9 @@
 	"instvars" : [
 		"type",
 		"date",
-		"parameter" ],
+		"parameter",
+		"from",
+		"to" ],
 	"name" : "Event",
 	"pools" : [
 		 ],

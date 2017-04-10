@@ -10,12 +10,12 @@
 
   <state id="waiting">
     <onentry>
-      <script>Transcript show: 'ping', sender currentDate printString, 'send ping after 20s'; cr.  </script>
-      <send event="ping" target="pongObject" delay="20">
+      <script>Transcript show: 'ping put a date here send ping after 20s'; cr.  </script>
+      <send event="ping" target="#('world' 'pongObject')" delay="20">
       </send>
     </onentry>
     <transition event="pong" target="waiting">
-      <script>Transcript show: 'ping', sender currentDate printString, 'receive pong'; cr.
+      <script>Transcript show: 'ping put a date here receive pong'; cr.
       data at: 'iterPong' put: ((data at: 'iterPong')+1)   </script>
     </transition>
     <transition cond="(data at: 'iterPong') > 4" target="final"/>

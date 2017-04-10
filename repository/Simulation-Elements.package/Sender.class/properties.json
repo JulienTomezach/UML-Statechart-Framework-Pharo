@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"childs",
-		"currentDate" ],
+		"manager",
+		"senderParent" ],
 	"name" : "Sender",
 	"pools" : [
 		 ],

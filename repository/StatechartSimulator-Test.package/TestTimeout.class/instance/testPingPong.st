@@ -2,6 +2,7 @@ as yet unclassified
 testPingPong
 	| tm center objIDState pathFolder |
 	center := StatechartManager new.
+		center id: 'world'.
 	objIDState := Dictionary new.
 	pathFolder := StatechartConstants statechartFolderPath.
 	objIDState at: 'pingObject' put: pathFolder , 'ping.xml'.

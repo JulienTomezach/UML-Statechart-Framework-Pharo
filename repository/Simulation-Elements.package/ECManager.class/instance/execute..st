@@ -4,11 +4,9 @@ execute: date
 	b := false.
 	super execute: date.
 	currentDate := date.
-	sender currentDate: currentDate.
 	"if our first date has been chosed"
 	firstDate = date
-		ifTrue: [ 
-			firstDate := nil.
+		ifTrue: [ firstDate := nil.
 			childs
 				do: [ :child | 
 					child firstDate = date

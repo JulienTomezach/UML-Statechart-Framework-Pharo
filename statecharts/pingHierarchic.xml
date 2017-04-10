@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<scxml  name="ping2" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
+<scxml  name="ping" version="1.0" xmlns="http://www.w3.org/2005/07/scxml">
 
 <state id= "root" initial='waiting'>
   <onentry>
@@ -10,9 +10,8 @@
 
   <state id="waiting">
     <onentry>
-      <script>Transcript show: 'ping put a date here send ping'; cr.  </script>
-      <send event="ping" target="#('world' 'pongObject')">
-        <param name="gift" expr="'a_gift'"/>
+      <script>Transcript show: 'ping put a date here send ping after 20s'; cr.  </script>
+      <send event="ping" target="#('world' 'pongP' 'pongObject')" delay="20">
       </send>
     </onentry>
     <transition event="pong" target="waiting">

@@ -1,7 +1,8 @@
 as yet unclassified
 testPingPongInRealTime
-	| tm center objIDState pathFolder |
+	"| tm center objIDState pathFolder |
 	center := StatechartManager new.
+		center id: 'world'.
 	objIDState := Dictionary new.
 	pathFolder := StatechartConstants statechartFolderPath.
 	objIDState at: 'pingObject' put: pathFolder , 'ping.xml'.
@@ -12,11 +13,17 @@ testPingPongInRealTime
 	tm world: center.
 	tm isDiscrete: false.
 	tm run.
-	"Transcript issue..."
+	"
+
+	"Transcript issue"
+
+	"
 	Halt now.
 	self
 		assert:
 			((Transcript contents
 				findTokens:
 					{Character space.
-					Character cr}) includes: 'nextDate-currentDate=20')
+					Character cr}) includes: 'nextDate-currentDate=20')"
+
+	

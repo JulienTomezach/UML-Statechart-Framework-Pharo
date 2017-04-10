@@ -10,10 +10,10 @@
 
     <state id="waiting">
       <transition event="ping" target="waiting">
-        <script>Transcript show: 'pong', sender currentDate printString, 'receive ping';
-           cr. Transcript show: 'pong',  sender currentDate printString,' send_pong '; cr.
+        <script>Transcript show: 'pong put a date here receive ping';
+           cr. Transcript show: 'pong put a date here send_pong '; cr.
         data at: 'iterPing' put: ((data at: 'iterPing')+1)   </script>
-        <send event="pong" target="pingObject"/>
+        <send event="pong" target="#('world' 'pingObject')"/>
       </transition>
         <transition cond="(data at: 'iterPing') > 4" target="final"/>
     </state>

@@ -5,4 +5,4 @@ execute: data parameter: param sender: sender
 	body argumentCount = 2
 		ifTrue: [ body value: data value: param ].
 	body argumentCount = 3
-		ifTrue: [ body value: data value: param value: sender ]
+		ifTrue: [ body value: data value: param value: sender ].

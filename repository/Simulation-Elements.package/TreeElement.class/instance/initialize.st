@@ -1,3 +1,4 @@
 as yet unclassified
 initialize
-	started := false
+	started := false.
+	address := LinkedList new

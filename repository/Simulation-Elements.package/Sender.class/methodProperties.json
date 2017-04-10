@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"childs:" : "JulienTomezach 3/13/2017 17:31",
-		"currentDate" : "JulienTomezach 3/13/2017 21:37",
-		"currentDate:" : "JulienTomezach 3/13/2017 21:37",
-		"initialize" : "JulienTomezach 3/13/2017 17:31",
-		"send:parameter:to:after:" : "JulienTomezach 3/14/2017 19:14",
-		"send:to:after:" : "JulienTomezach 3/14/2017 19:39" } }
+		"initialize" : "JulienTomezach 4/9/2017 21:35",
+		"manager:" : "JulienTomezach 4/9/2017 21:37",
+		"send:" : "JulienTomezach 4/10/2017 21:23",
+		"send:parameter:to:after:" : "JulienTomezach 4/10/2017 22:09",
+		"sendDown:" : "JulienTomezach 4/10/2017 22:24",
+		"sendUp:" : "JulienTomezach 4/10/2017 22:24",
+		"senderParent:" : "JulienTomezach 4/9/2017 16:17" } }
